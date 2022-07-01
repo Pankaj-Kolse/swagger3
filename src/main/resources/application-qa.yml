@@ -1,0 +1,14 @@
+server:
+  port: 6262
+spring:
+  datasource:
+    driverClassName: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/qapr?useSSL=false
+    username: root
+    password: P@nk@jkolse06
+
+spring.jpa:
+  hibernate:
+    ddl-auto: update
+  properties.hibernate.dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+  spring.mvc.pathmatch.matching-strategy : ANT_PATH_MATCHER
